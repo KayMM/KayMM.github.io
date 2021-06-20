@@ -7,9 +7,31 @@
     <link rel="icon" href="favicon-16x16.png">
     <style type="text/css">
         body {
+            width: 90%;
+            margin: 0 auto;
             font-family: Georgia, Times, serif;
             background-color: rgb(185,179,175);
      }
+        #content {overflow: auto;}
+        #nav, #feature, #footer {
+        margin: 1%;}
+        .column1, .column2, .column3{
+        width 31.3%;
+            float: left;
+            margin: 1%;
+        }
+        .column3 {margin-right: 0%;}
+        li{
+        display: inline;
+        padding 0.5em;}
+        #nav, #footer {
+        background-color: #efefef;
+        padding: 0.5em 0;}
+        #feature, .article {
+        height: 10em;
+        margin-bottom: 1em;
+        background-color: #efefef;}
+        
         h1{
             font-family: Arial , Veranda, sans-serif;
             letter-spacing: 0.2em;
@@ -40,24 +62,41 @@
    
 </head>
 <body>
-    <header>
-    <nav> <!-- navigation bar left to right -->
-     <!--   <li> <a href=""><img src="https://img.icons8.com/ios/500/linkedin.png" width="50" alt="image of instagram icon"></a> </li> -->
-       <ul>
-        <li> <a href="https://kaymm.github.io/">Home </a> </li>
-        <li> <a href="#">Education </a> </li>
-        <li> <a href="#">Work </a> </li>
-        <li> <a href="#">About </a></li>
-        <li> <a href="#"> Contact </a></li>
-</ul>
-    </nav>
-    </header>
-    <h1>Portfolio</h1>
-    <p class="credits"> K. Markley </p>
+    <div id="header">
+        <h1>Logo Portfolio</h1>
+        <div id="nav>
+          <ul>
+             <li> <a href="https://kaymm.github.io/">Home </a> </li>
+             <li> <a href="#">Education </a> </li>
+             <li> <a href="#">Work </a> </li>
+             <li> <a href="#">About </a></li>
+             <li> <a href="#">Contact </a></li>
+           </ul>
+        </div>
+       </div>
+     <div id="content">
+                <div id="feature">
+                      <p>Feature</p>
+                                 <p class="credits"> K. Markley </p>
     <p>The internship of 2021...</p>
-      <div><!--  -->
+      <!--  -->
     <p>My name is Kayla, and I make out of this world VR games.</p>
     <img src="https://cdn.icon-icons.com/icons2/665/PNG/512/alien_icon-icons.com_60286.png" width="200" alt="alien icon">
-    </div>
+    
+                 </div>
+       <div class="article column1">
+                    <p>Column one</p>
+       </div>
+       <div class="article column2">
+                    <p>Column two</p>
+       </div>   
+       <div class="article column3">
+                    <p>Column three</p>
+       </div>          
+                                   </div>
+        <div id="footer">
+                        <p>&copy; Copyright 2021 </p>
+                        </div>
+    
 </body>
 </html>
